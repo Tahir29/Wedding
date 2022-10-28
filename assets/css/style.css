@@ -1,0 +1,508 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --purple: #b285b0;
+  --darkpurple: #806286;
+  --lightpurple: #e5c0da;
+  --pink: #d65679;
+  --greyish: #6e6e86;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Lato', 'Helvetica', sans-serif;
+}
+
+@font-face {
+	font-family: edwardian_script_itcregular;
+	src: url(../font/edwardian-script-itc-1361504162-webfont.ttf);
+}
+
+@font-face {
+	font-family: snell_roundhand_script;
+	src: url(../font/snell_roundhand_script-webfont.ttf);
+}
+
+a, a:hover, a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.position-left {
+	margin-right: 8px;
+}
+
+.position-right {
+	margin-left: 8px;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.content-group {
+	margin-bottom: 20px;
+}
+
+.align-center {
+	margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    text-align: center;
+    float: none;
+}
+
+.section-padding {
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+
+.section-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.section__main {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/main-bg.svg);
+	background-size: cover;
+	/*overflow-x: hidden;*/
+}
+
+.section__main .section__main-left .flower {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 20%;
+}
+
+.section__main .section__main-header {
+	padding-top: 8%;
+	padding-bottom: 8%;
+	/*position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;*/
+}
+
+.section__main .section__main-header h1 {
+	font-size: 92px;
+	font-weight: 100;
+	font-family: 'raleway', cursive;
+	color: var(--purple);
+	margin: 40px 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+.and {
+	color: var(--lightpurple);
+	/*position: relative;*/
+	font-size: 140px;
+	font-family: 'edwardian_script_itcregular';
+}
+
+.section__main .section__main-header .section__main-button {
+	margin: 50px auto;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 5px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.section__main .section__main-header .section__main-button a {
+	color: var(--purple);
+	border: 2px solid var(--purple);
+	padding: 8px;
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+	transition: .5s;
+}
+
+.section__main .section__main-header .section__main-button span {
+	font-size: 14px;
+	color: #ccc;
+	display: block;
+}
+
+.section__main .section__main-header .section__main-button a:hover,
+.section__main .section__main-header .section__main-button a:focus,
+.section__main .section__main-header .section__main-button a:active {
+	background-color: var(--purple);
+	color: var(--white);
+}
+
+
+/*-------------------------------------------------------------------
+						ladke wale css
+-------------------------------------------------------------------*/
+
+.section__banner {
+	position: relative;
+	background-color: rgba(0, 0, 0, .1);
+	/*height: 660px;*/
+	overflow: hidden;
+}
+
+.section__banner .section__banner-content {
+	/*position: absolute;
+	top: 0;
+	width: 100%;*/
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+.section__banner .section__banner-content h1 {
+	font-size: 92px;
+    font-weight: 100;
+    font-family: 'raleway', cursive;
+    color: var(--white);
+    margin: 40px 0 20px 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: 0 0 5px rgba(150,150,150,1);
+    text-shadow: 0 0 5px rgba(150,150,150,1);
+}
+
+.section__banner .section__banner-content .and {
+	color: var(--white);
+}
+
+.section__banner .section__banner-content h4.gettingMarried {
+	color: var(--white);
+	font-weight: normal;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-family: 'Raleway','Helvetica',sans-serif;
+	-webkit-text-shadow: 0 0 5px rgba(150,150,150,1);
+	text-shadow: 0 0 5px rgba(150,150,150,1);
+}
+
+.section__banner .section__banner-content h4.weddingDate {
+	font-size: 45px;
+	font-weight: 700;
+	font-family: snell_roundhand_script;
+	color: var(--white);
+	margin-top: 25px;
+	-webkit-text-shadow: 0 0 5px rgba(150,150,150,.8);
+	text-shadow: 0 0 5px rgba(150,150,150,.8);
+}
+
+.section__banner .section__banner-content .section__banner-button {
+	margin: 50px auto;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.section__banner .section__banner-content .section__banner-button a {
+	color: var(--white);
+    border: 2px solid var(--white);
+    padding: 8px;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.section__banner .section__banner-content .section__banner-button a:hover,
+.section__banner .section__banner-content .section__banner-button a:focus,
+.section__banner .section__banner-content .section__banner-button a:active {
+	background-color: var(--pink);
+}
+
+.section__invitation {
+	background-image: url(../img/main-bg.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+}
+
+.divider {
+	border-top: 1px solid var(--lightpurple);
+}
+
+.section__invitation .section__invitation-invite h3 {
+	color: var(--darkpurple);
+	text-transform: capitalize;
+	font-weight: 100;
+	font-size: 100px;
+	font-family: 'edwardian_script_itcregular';
+}
+
+.section__invitation .section__invitation-content p {
+	font-size: 19px;
+	font-family: 'raleway','Helvetica',sans-serif;
+	line-height: 30px;
+	color: var(--greyish);
+	/*text-align: center;*/
+	margin: 10px 6px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.section__invitation .section__invitation-content h3.name {
+	text-transform: capitalize;
+	font-size: 60px;
+	font-weight: 100;
+	line-height: 80px;
+	font-family: 'edwardian_script_itcregular';
+	color: var(--greyish);
+}
+
+.section__invitation .section__invitation-content p.noGifts {
+	margin-top: 80px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.section__functionDetails {
+	background: url(../img/4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.section__functionDetails .party {
+	background-color: #fff;
+	background-color: rgba(255,255,255,.8);
+	padding: 60px 0;
+	margin: 100px 0;
+	text-align: center;
+	font-family: 'Raleway','Helvetica',sans-serif;
+	transition: .5s;
+}
+
+.section__functionDetails .party:hover {
+	background-color: rgb(255,255,255);
+}
+
+.section__functionDetails .party h3 {
+	font-size: 26px;
+    font-weight: 500;    
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--greyish);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.section__functionDetails .party .party-data {
+	margin-bottom: 20px;
+}
+
+.section__functionDetails .party .party-data p {
+	font-size: 19px;
+	line-height: 30px;
+	color: var(--greyish);
+	/*text-align: center;*/
+	margin: 10px 6px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.section__functionDetails .party .party-data h4 {
+	text-transform: uppercase;
+    color: var(--pink);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section__family .section__family-parents h3, .section__family .section__extended-family h3 {
+	font-size: 26px;
+    font-weight: 500;    
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--greyish);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.section__family .parents {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.section__family .parents .parents-name h4 {
+	text-transform: uppercase;
+    color: var(--pink);
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    min-height: 50px;
+}
+
+.section__family .parents .parents-name h4 span {
+	text-transform: uppercase;
+    font-size: 11px;
+    display: block;
+    padding-top: 5px;
+    color: #aaa;
+    letter-spacing: 2px;
+}
+
+.section__family .extendFamily p {
+	margin: 25px 0;
+	padding: 0 10px;
+	text-align: left;
+	font-family: 'raleway', 'Helvetica', sans-serif;
+    font-weight: normal;
+    font-size: 19px;
+    color: #6E6E86;
+    /*line-height: 29px;*/
+    -webkit-font-smoothing: antialiased;
+    float: left;
+}
+
+.section__family .extendFamily p span {
+	text-transform: uppercase;
+    font-size: 11px;
+    display: block;
+    padding-top: 5px;
+    color: #aaa;
+    letter-spacing: 2px;
+}
+
+.section__route {
+	background-color: var(--darkpurple);
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.section__route--left,
+.section__route--right {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.section__route hr {
+	margin: 7px 0;
+}
+
+.section__route .route-direction {
+	background-image: url(../img/white-flower-bg2.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 20% 10%;
+}
+
+.section__route .route-direction h3 {
+	font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.section__route .route-direction p {
+	font-family: 'raleway', 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--white);
+    line-height: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.section__route .route-direction h4 {
+	font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--white);
+    font-family: 'Raleway', 'Helvetica', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.mapouter {
+	position: relative;
+	height: 100%;
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	background: none!important;
+	height: 100%; 
+	width: 100%;
+}
+
+.section__timer {
+	text-align: center;
+}
+
+.section__timer .countdown span {
+	position: relative;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: #888;
+    margin-right: 10px;
+}
+
+.section__timer .countdown span:last-child {
+	margin-right: 0;
+}
+
+.section__timer .countdown span.days, 
+.section__timer .countdown span.hours,
+.section__timer .countdown span.minutes,
+.section__timer .countdown span.seconds {
+	top: -30px;
+}
+
+.section__timer .countdown span.and {
+	font-size: 160px;
+	margin: 0 55px 0 0;
+}
+
+.section__timer .leftt {
+	    font-family: 'Lato', 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+        text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin-top: 15px;
+}
+
+.section__footer { 
+	background-color: var(--pink);
+	text-align: center;
+	color: var(--white);
+}
+
+.section__footer p {
+	padding: 15px 0;
+	margin: 0;
+	font-family: 'Lato', 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+	.section__main {
+		overflow-y: hidden;
+	}
+
+	.section__main .section__main-left .flower {
+		width: 30%;
+	}
+
+	.section__main .section__main-header h1 {
+		font-size: 60px;
+		margin: 0 0 30px;
+	}
+
+	.section__main .section__main-header .and, .section__banner .section__banner-content .and {
+		display: block;
+		font-size: 90px;
+	}
+
+	.section__main .section__main-header .section__main-button {
+		margin: 20px auto;
+	}
+
+	.section__route {
+		flex-direction: column;
+	}
+
+	.section__route--left,
+	.section__route--right {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.gmap_canvas {
+		height: 450px;
+	}
+}
+
+@media screen and (max-width: 542px) {
+	.section__timer .countdown span.days, .section__timer .countdown span.hours {
+		top: 0;
+	}
+
+	.section__timer .countdown span.and {
+		display: block;
+	}
+}
